@@ -37,8 +37,12 @@ gulp.task('static', ['html','scss', 'libs']);
 
 
 gulp.task('libs', function () {
-    gulp.src(libs_base + '/angular/angular.min.js')
+    gulp.src(libs_base + '/angular/angular.js')
         .pipe(rename('angular.js'))
+        .pipe(gulp.dest(paths.dst.js_libs));
+
+    gulp.src(libs_base + '/jquery/dist/jquery.js')
+        .pipe(rename('jquery.js'))
         .pipe(gulp.dest(paths.dst.js_libs));
 });
 

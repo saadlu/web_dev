@@ -5,10 +5,20 @@
     <title>First Title</title>
     <link rel="stylesheet" href="css/main.css">
     <script type="application/javascript" src="js/libs/angular.js"></script>
+    <script type="application/javascript" src="js/libs/jquery.js"></script>
   </head>
   <body ng-app>
     <div ng-init="name='saad'">
       {{name}} is my name
     </div>
+    <p>
+      This is that line
+    </p>
+    <script>
+      $(document).ready(function (){
+        console.log('document is ready');
+        $("p").text("but not this line");
+      });
+    </script>
   </body>
 </html>
