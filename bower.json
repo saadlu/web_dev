@@ -1,0 +1,21 @@
+{
+  "name": "web_dev",
+  "version": "0.0.0",
+  "authors": [
+    "Sa'ad <mashrur.mia@gmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "1.2.27"
+  }
+}
