@@ -1,7 +1,18 @@
 $font-stack: Heveltica, sans-serif;
 
-body{
+body {
   font-family: $font-stack;
-  background: #555555;
-  color:red;
+
+}
+
+.attributeName {
+  float: left;
+  margin-right: 20px;
+
+}
+
+.attributeValue {
+  overflow: hidden;
+  word-wrap: break-word;
+  hyphens: auto;
 }

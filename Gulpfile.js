@@ -49,7 +49,7 @@ gulp.task('libs', function () {
 gulp.task('dev', function () {
     livereload.listen();
     gulp.watch(paths.src.html, ['html']);
-    gulp.watch(paths.src.html, ['scss']);
+    gulp.watch(paths.src.scss, ['scss']);
 
 
 });
