@@ -62,6 +62,8 @@ gulp.task('libs', function () {
     
     gulp.src(libs_base + '/angularjs-toaster/toaster.css')
         .pipe(gulp.dest(paths.dst.css_libs));
+    gulp.src(libs_base + '/font-awesome/**')
+        .pipe(gulp.dest(paths.dst.css_libs + '/font-awesome'));
     
 });
 gulp.task('static', ['html','scss', 'javascript', 'libs']);

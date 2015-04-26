@@ -1,26 +1,27 @@
 {
-  "name": "web_dev",
-  "version": "0.0.0",
-  "authors": [
+    "name": "web_dev",
+    "version": "0.0.0",
+    "authors": [
     "Sa'ad <mashrur.mia@gmail.com>"
   ],
-  "moduleType": [
+    "moduleType": [
     "node"
   ],
-  "license": "MIT",
-  "ignore": [
+    "license": "MIT",
+    "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
   ],
-  "devDependencies": {
-    "jquery": "~2.1.3"
-  },
-  "dependencies": {
-    "angular-ui-router": "~0.2.13",
-    "angular": "latest",
-    "angularjs-toaster": "~0.4.12"
-  }
+    "devDependencies": {
+        "jquery": "~2.1.3"
+    },
+    "dependencies": {
+        "angular-ui-router": "~0.2.13",
+        "angular": "latest",
+        "angularjs-toaster": "~0.4.12",
+        "font-awesome": "latest"
+    }
 }

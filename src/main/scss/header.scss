@@ -1,0 +1,64 @@
+body {}
+
+#header {
+    height: 46px;
+    background-color: gray;
+    > div {
+        height: inherit;
+        float: left;
+        margin-left: 10px;
+        line-height: 46px;
+    }
+}
+
+#domain-selector {
+    display: inline;
+    padding: 11px;
+    background-color: lightgray;
+    vertical-align: middle;
+}
+
+#domain-selector:after {
+    font-family: 'FontAwesome';
+    content: '\f107';
+    vertical-align: middle;
+}
+
+#free-text-search {
+    
+    $input-box-width: 200px;
+    $button-width: 30px;
+    $element-height:40px;
+    
+    display: inline-block;
+    height: 46px;
+    position: relative;
+    margin: 0;
+    * {
+        position: absolute;
+        top: 50%;
+        margin-top: -$element-height/2;
+        height: $element-height;
+        border: 0;
+        outline: none;
+    }
+    input {
+        width: $input-box-width;
+    }
+    button#clear {
+        width: $button-width;
+        left: $input-box-width;
+        background-color: white;
+    }
+    button#clear:after {
+        font-family: 'FontAwesome';
+        font-weight: 100;
+        content: '\f00d';
+    }
+    button#search {
+        width: $button-width;
+        left: $input-box-width + $button-width;
+    }
+}
+
+
